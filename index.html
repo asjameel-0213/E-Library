@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>📚 E-Library</title>
+</head>
+<body>
+    <button id="new-book-btn">+ New Book</button>
+
+    <div id="books-container"> </div>
+
+    <dialog id="new-book-dialog">
+    
+        <form id="new-book-form">
+            <h2>New Book</h2>
+
+            <label>
+                Title: <input type="text" name="title" required />
+            </label>
+            <label>
+                Author: <input type="text" name="author" required />
+            </labe>
+            <label>
+                Pages: <input type="number" name="pages" min="1" required />
+            </label>
+            <label>
+                Read: <input type="checkbox" name="read" />
+            </label>
+
+            <div>
+                <button type="submit">Add Book</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
